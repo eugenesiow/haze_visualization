@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<!--<script src="http://echarts.baidu.com/doc/asset/js/echartsHome.js"></script>-->
+
+
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
+<script src="http://echarts.baidu.com/doc/asset/js/jquery.min.js"></script>
+<script src="http://echarts.baidu.com/doc/asset/js/bootstrap.min.js"></script>
+<script src="http://echarts.baidu.com/build/dist/echarts-all.js"></script>
+<script src="./js/fire.js"></script>
+<script src="./js/fire_pts.js"></script>
+<script src="./js/date.js"></script>
+<script src="./js/pm.js"></script>
+<script src="./js/psi.js"></script>
+<script src="./js/date_time.js"></script>
+<script src="./js/senti_score.js"></script>
+<script src="./js/tweet_amount.js"></script>
+<script src="./js/contents.js"></script>
+<script src="./js/main.js"></script>
+<link href="http://echarts.baidu.com/doc/asset/css/bootstrap.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<table>
+	<tr>
+		<td>
+			<div class="map" style="position:relative; width:1000px;height:1000px;">
+				<div id="map-top" style="position:absolute; width:100%;height:100%; z-index:2;"></div>
+				<div id="googleMap" style="position:absolute; width:100%;height:100%; z-index:1;"></div>
+			</div>
+		</td>
+		<td>
+			<table>
+				<tr style="height: 30px;">
+					<td>
+						<table>
+							<tr>
+								<td class="div-date header-font">
+								</td>
+								<td>
+									<button class="glyphicon glyphicon-pause pause btn btn-primary">PAUSE　</button>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td class="div-fpa header-font">
+					</td>
+				</tr>
+				<tr style="height: 400px;">
+					<td>
+						<div id="div-psi" style="width: 500px; height: 400px;" />
+					</td>
+					<td>
+						<div id="div-fire" style="width: 500px; height: 400px;" />
+					</td>
+				</tr>
+				<tr style="height: 400px;">
+					<td>
+						<div id="div-pm" style="width: 500px; height: 400px;" />
+					</td>
+					<td>
+						<div id="div-senti" style="width: 500px; height: 400px;" />
+					</td>
+				</tr>
+				<tr style="height: 100px;">
+					<td colspan="2">
+						<table>
+							<tr>
+								<td style="width: 150px;" valign="middle">
+									<h3>
+										Pos. Tweets
+									</h3>
+								</td>
+								<td style="width: 800px;" valign="middle">
+									<pre id="div-pos" disabled="true" style="width: 800px;"></pre>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr style="height: 100px;">
+					<td colspan="2">
+						<table>
+							<tr>
+								<td style="width: 150px;" valign="middle">
+									<h3>
+										Neg. Tweets
+									</h3>
+								</td>
+								<td style="width: 800px;" valign="middle">
+									<pre id="div-neg" disabled="true" style="width: 800px;"></pre>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</div>
+
+</body>
+</html>
